@@ -338,10 +338,11 @@ align-items: flex-end;
 }
 .blog .articles-blog{
     width: 90%;
-    margin: 10px auto;
+    padding: 10px 0;
+    margin: 0 auto;
 }
 .articles-blog .article-blog{
-    margin: 60px auto;
+    padding: 60px 0;
 }
 .article-blog img{
     width:  100%;
@@ -355,7 +356,7 @@ align-items: flex-end;
     font-style: normal;
     line-height: 28.8px;
     letter-spacing: 0.4px;
-    margin: 8px auto;
+    padding: 8px 0;
 }
 .article-blog p{
     color: #969696;
@@ -366,7 +367,7 @@ align-items: flex-end;
     font-style: normal;
     line-height: 28.8px;
     letter-spacing: 0.4px;
-    margin: 8px auto;
+    padding: 8px 0;
 }
 .article-blog .dates{
    color: #CAA462;
@@ -377,9 +378,59 @@ align-items: flex-end;
    font-style: normal;
    line-height: 28.8px;
    letter-spacing: 0.4px;
-   margin: 8px auto;
+   padding: 8px 0;
 }
 
 
 
+/*  por que elegirnos */
 
+.choos{
+    background-color: #1e1e1e;
+    /* margin-top: -60px; */
+}
+.text-choos{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin:0 auto;
+}
+.text-choos img{
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.text-choos h3{
+    color: #CAA462;
+    font-family: "Playfair Display",
+    Sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 28.8px;
+    letter-spacing: 0.4px;
+    text-align: center;
+}
+.text-choos p{
+    color: #969696;
+    font-family: "Titillium Web",
+    Sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 26.3px;
+    letter-spacing: -0.3px;
+    align-self: flex-start;
+    text-align: center;
+}
+
+
+/*  footer */
+
+footer{
+    background-color: #282828;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+footer img{
+    margin: 0 auto;
+}
