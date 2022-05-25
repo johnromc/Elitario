@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    text-decoration: none;
+    list-style: none;
+}
+
+header {
+    background: #1e1e1e;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*  Nav-bar */
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0 auto;
+}
+
+.hamburger {
+    cursor: pointer;
+    z-index: 999;
+}
+
+.hamburger.hamburger--slider.is-active {
+    top: -13rem;
+    right: -90%;
+    position: relative;
+
+
+}
+
+.panel {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 20px;
+    background-color: #1e1e1e;
+    text-align: left;
+    z-index: 998;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: clip-path 0.5s ease;
+}
+
+.panel li {
+    display: block;
+    line-height: 3rem;
+    margin: 3rem 0;
+}
+
+.panel li a {
+    color: #fff;
+    font-size: 3rem;
+    text-transform: initial;
+    margin-left: 5%;
+}
+
+.panel.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: 0.5s;
+}
+
+/* Colores del icono del menu */
+
+.hamburger-inner,
+.hamburger-inner:after,
+.hamburger-inner:before {
+    background-color: #fff;
+    width: 25px;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+    background-color: #fff;
+    width: 20px;
+}
+
+
+
+.title {
+    font-family: "Playfair Display",
+        Sans-serif;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #848484;
+    padding-top: 40px;
+}
+
+.title hr {
+    width: 80%;
+    margin: 20px auto;
+    border: #CAA462 1px solid;
+}
+.text{
+    color: #969696;
+    font-family: "Titillium Web",
+    Sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 26.3px;
+    letter-spacing: -0.3px;
+    align-self: flex-start;
+    text-align: center;
+    padding-bottom: 5rem;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.subtitle{
+    font-family: "Playfair Display",
+    Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #848484;
+    
+}
+.about-us{
+    background:#1e1e1e;
+}
+.stores{
+    padding-top: 30px;
+    background-color: #000;
+}
+.beneficios{
+    background: url(../resourses/carrusel-1.jpg),rgba(0, 0, 0, 0.7) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.ventaja {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.ventaja img{
+    width: 10%;
+    margin: 5px auto;
+
+}
+.we-can{
+    background: #1e1e1e;
+    padding-bottom: 30px;
+}
+.white{
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+.nine{
+    background: #CAA462;
+    width: 90%;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+.eight{
+    background: #CAA462;
+    width: 80%;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+.seven{
+    background: #CAA462;
+    width: 70%;
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top:-15px0;
+}
+.lema{
+    background: url(../resourses/carrusel-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+/*  footer */
+
+footer {
+    background-color: #282828;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+footer img {
+    margin: 0 auto;
+}
